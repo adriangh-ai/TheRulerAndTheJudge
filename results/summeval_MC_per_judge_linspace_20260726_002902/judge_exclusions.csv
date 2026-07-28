@@ -1,0 +1,10 @@
+file,n_rows_loaded,n_rows_after_dropna,n_dropped_nan_score
+summeval_Llama-3.2-3B-Instruct_outputs.parquet,6800,6332,468
+summeval_Qwen_Qwen3-Next-80B-A3B-Instruct_api_judge_results.parquet,6800,6800,0
+summeval_deepseek_deepseek-v3.2_api_judge_results.parquet,6798,6798,0
+summeval_gemma3_4b_it_outputs.parquet,6800,6800,0
+summeval_google_gemma-3-27b-it_api_judge_results.parquet,6799,6799,0
+summeval_meta-llama_llama-3.3-70b-instruct_api_judge_results.parquet,6797,6797,0
+summeval_openai_gpt-oss-120b_api_judge_results.parquet,6780,6780,0
+summeval_openai_gpt-oss-20b_api_judge_results.parquet,6797,6797,0
+summeval_qwen_qwen3-14b.parquet,6793,6793,0

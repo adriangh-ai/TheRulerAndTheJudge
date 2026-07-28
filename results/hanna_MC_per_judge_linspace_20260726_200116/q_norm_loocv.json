@@ -1,0 +1,68 @@
+{
+  "Coherence": {
+    "deepseek/deepseek-v3.2": 10.9318877702838,
+    "google/gemma-3-27b-it": 8.149393510384993,
+    "google/gemma-3-4b-it": 7.681976694305459,
+    "meta-llama/llama-3.2-3b-instruct": 12.862259335583168,
+    "meta-llama/llama-3.3-70b-instruct": 13.935428932188637,
+    "openai/gpt-oss-120b": 11.712736703321697,
+    "openai/gpt-oss-20b": 5.770917294461725,
+    "qwen/qwen3-14b": 14.22840004665686,
+    "qwen/qwen3-next-80b-a3b-instruct": 14.290202826415184
+  },
+  "Complexity": {
+    "deepseek/deepseek-v3.2": 4.6931652393050936,
+    "google/gemma-3-27b-it": 7.5889738808059,
+    "google/gemma-3-4b-it": 5.875273416803643,
+    "meta-llama/llama-3.2-3b-instruct": 6.803854527362953,
+    "meta-llama/llama-3.3-70b-instruct": 6.207347915607815,
+    "openai/gpt-oss-120b": 7.401362554864622,
+    "openai/gpt-oss-20b": 4.216496073267529,
+    "qwen/qwen3-14b": 6.2158316148141255,
+    "qwen/qwen3-next-80b-a3b-instruct": 11.888991154955969
+  },
+  "Empathy": {
+    "deepseek/deepseek-v3.2": 10.659613919028397,
+    "google/gemma-3-27b-it": 8.371643850309153,
+    "google/gemma-3-4b-it": 5.778770347173474,
+    "meta-llama/llama-3.2-3b-instruct": 4.97756981746111,
+    "meta-llama/llama-3.3-70b-instruct": 8.975407185065686,
+    "openai/gpt-oss-120b": 11.402441224667609,
+    "openai/gpt-oss-20b": 2.771687760646543,
+    "qwen/qwen3-14b": 4.932236495054914,
+    "qwen/qwen3-next-80b-a3b-instruct": 10.093714129571332
+  },
+  "Engagement": {
+    "deepseek/deepseek-v3.2": 10.365001070030564,
+    "google/gemma-3-27b-it": 10.050542481498416,
+    "google/gemma-3-4b-it": 4.9477335951925845,
+    "meta-llama/llama-3.2-3b-instruct": 5.994954296431514,
+    "meta-llama/llama-3.3-70b-instruct": 16.20990269468286,
+    "openai/gpt-oss-120b": 12.645518256969517,
+    "openai/gpt-oss-20b": 4.105060223241361,
+    "qwen/qwen3-14b": 13.485150178689533,
+    "qwen/qwen3-next-80b-a3b-instruct": 14.65247449280466
+  },
+  "Relevance": {
+    "deepseek/deepseek-v3.2": 9.41912465582036,
+    "google/gemma-3-27b-it": 4.937535399515385,
+    "google/gemma-3-4b-it": 5.012881258737685,
+    "meta-llama/llama-3.2-3b-instruct": 3.0843190293635114,
+    "meta-llama/llama-3.3-70b-instruct": 9.19617346120171,
+    "openai/gpt-oss-120b": 8.385081092930411,
+    "openai/gpt-oss-20b": 3.221056291057163,
+    "qwen/qwen3-14b": 6.268040703765678,
+    "qwen/qwen3-next-80b-a3b-instruct": 7.907689520419018
+  },
+  "Surprise": {
+    "deepseek/deepseek-v3.2": 9.043796137875338,
+    "google/gemma-3-27b-it": 12.351251267180446,
+    "google/gemma-3-4b-it": 8.075211768029122,
+    "meta-llama/llama-3.2-3b-instruct": 5.711957515190529,
+    "meta-llama/llama-3.3-70b-instruct": 6.758896088928366,
+    "openai/gpt-oss-120b": 7.604105211688089,
+    "openai/gpt-oss-20b": 2.4736505970651015,
+    "qwen/qwen3-14b": 5.781925648764239,
+    "qwen/qwen3-next-80b-a3b-instruct": 9.521087288397966
+  }
+}

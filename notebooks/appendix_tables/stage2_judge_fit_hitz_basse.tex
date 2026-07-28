@@ -1,0 +1,59 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Full Stage~2 judge calibration diagnostics for HiTZ-BASSE. Status is based on the operational outfit MNSQ interval $[0.5,1.5]$.}
+\label{tab:app-stage2-hitz_basse}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrl}
+\toprule
+Dim. & Judge & Infit & Outfit & Status \\
+\midrule
+5w1h & DeepSeek-v3.2 & 1.069 & 1.079 & Pass \\
+5w1h & Llama-3.3-70B & 1.164 & 1.162 & Pass \\
+5w1h & GPT-OSS-120B & 1.221 & 1.304 & Pass \\
+5w1h & Gemma-3-27B & 1.053 & 1.305 & Pass \\
+5w1h & Qwen3-Next-80B & 1.280 & 1.305 & Pass \\
+5w1h & GPT-OSS-20B & 1.174 & 1.312 & Pass \\
+5w1h & qwen3-14b & 1.264 & 1.352 & Pass \\
+5w1h & Gemma-3-4B & 1.790 & 3.028 & High \\
+5w1h & Llama-3.2-3B & 2.398 & 18.134 & High \\
+coherence & GPT-OSS-120B & 1.280 & 1.593 & High \\
+coherence & Gemma-3-4B & 2.037 & 2.375 & High \\
+coherence & Llama-3.2-3B & 1.681 & 2.781 & High \\
+coherence & Qwen3-Next-80B & 1.909 & 2.810 & High \\
+coherence & qwen3-14b & 1.596 & 2.816 & High \\
+coherence & Llama-3.3-70B & 1.291 & 4.629 & High \\
+coherence & GPT-OSS-20B & 1.955 & 5.057 & High \\
+coherence & DeepSeek-v3.2 & 1.757 & 7.871 & High \\
+coherence & Gemma-3-27B & 1.399 & 21.262 & High \\
+consistency & Gemma-3-4B & 1.724 & 1.840 & High \\
+consistency & GPT-OSS-120B & 1.287 & 2.516 & High \\
+consistency & Llama-3.2-3B & 1.506 & 2.751 & High \\
+consistency & qwen3-14b & 1.282 & 3.365 & High \\
+consistency & GPT-OSS-20B & 1.296 & 3.693 & High \\
+consistency & Qwen3-Next-80B & 1.327 & 3.832 & High \\
+consistency & DeepSeek-v3.2 & 1.329 & 4.614 & High \\
+consistency & Llama-3.3-70B & 1.095 & 6.860 & High \\
+consistency & Gemma-3-27B & 1.265 & 9.616 & High \\
+fluency & GPT-OSS-120B & 1.066 & 1.293 & Pass \\
+fluency & qwen3-14b & 1.197 & 1.471 & Pass \\
+fluency & DeepSeek-v3.2 & 1.161 & 1.493 & Pass \\
+fluency & Llama-3.2-3B & 1.314 & 1.518 & High \\
+fluency & Qwen3-Next-80B & 1.118 & 1.603 & High \\
+fluency & GPT-OSS-20B & 1.326 & 1.636 & High \\
+fluency & Llama-3.3-70B & 1.103 & 2.069 & High \\
+fluency & Gemma-3-27B & 1.283 & 2.144 & High \\
+fluency & Gemma-3-4B & 1.528 & 2.997 & High \\
+relevance & Llama-3.3-70B & 1.546 & 1.551 & High \\
+relevance & Llama-3.2-3B & 1.708 & 1.691 & High \\
+relevance & GPT-OSS-120B & 1.526 & 1.795 & High \\
+relevance & qwen3-14b & 1.676 & 1.801 & High \\
+relevance & Gemma-3-4B & 1.463 & 1.958 & High \\
+relevance & GPT-OSS-20B & 1.583 & 1.982 & High \\
+relevance & DeepSeek-v3.2 & 1.672 & 2.192 & High \\
+relevance & Gemma-3-27B & 1.740 & 3.598 & High \\
+relevance & Qwen3-Next-80B & 1.762 & 3.814 & High \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

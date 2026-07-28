@@ -1,0 +1,10 @@
+dataset,_dimension_key,strict_minimum_fsr,strict_n_fsr_minimizers,mid_minimum_fsr,mid_n_fsr_minimizers,all_original_minimizers_retained,minimizer_set_exactly_unchanged,strict_fsr_minimizers,mid_fsr_minimizers,dimension,strict_risk_state,strict_risk_selected_model,strict_risk_selected_fsr,mid_risk_state,mid_risk_selected_model,mid_risk_selected_fsr,risk_outcome_changed,selection_to_abstention
+HiTZ-BASSE,5w1h,0.29545454545454547,1,0.27906976744186046,1,True,True,openai/gpt-oss-20b,openai/gpt-oss-20b,5w1h,SELECT: openai/gpt-oss-20b,openai/gpt-oss-20b,0.29545454545454547,SELECT: openai/gpt-oss-20b,openai/gpt-oss-20b,0.27906976744186046,False,False
+HiTZ-BASSE,coherence,0.2,1,0.2,1,True,True,google/gemma-3-27b-it,google/gemma-3-27b-it,coherence,REFUSE,,,REFUSE,,,False,False
+HiTZ-BASSE,consistency,0.18947368421052632,1,0.17708333333333334,1,True,True,meta-llama/llama-3.2-3b-instruct,meta-llama/llama-3.2-3b-instruct,consistency,REFUSE,,,REFUSE,,,False,False
+HiTZ-BASSE,fluency,0.4,1,0.39473684210526316,1,True,True,qwen/qwen3-14b,qwen/qwen3-14b,fluency,REFUSE,,,REFUSE,,,False,False
+HiTZ-BASSE,relevance,0.42857142857142855,1,0.4307692307692308,1,True,True,qwen/qwen3-14b,qwen/qwen3-14b,relevance,REFUSE,,,REFUSE,,,False,False
+SummEval,coherence,0.0625,1,0.11764705882352941,1,True,True,openai/gpt-oss-20b,openai/gpt-oss-20b,coherence,SELECT: openai/gpt-oss-20b,openai/gpt-oss-20b,0.0625,SELECT: openai/gpt-oss-20b,openai/gpt-oss-20b,0.11764705882352941,False,False
+SummEval,consistency,0.2692307692307692,1,0.2692307692307692,1,True,True,openai/gpt-oss-20b,openai/gpt-oss-20b,consistency,SELECT: openai/gpt-oss-20b,openai/gpt-oss-20b,0.2692307692307692,SELECT: openai/gpt-oss-20b,openai/gpt-oss-20b,0.2692307692307692,False,False
+SummEval,fluency,0.3939393939393939,1,0.42424242424242425,1,True,True,Qwen/Qwen3-Next-80B-A3B-Instruct,Qwen/Qwen3-Next-80B-A3B-Instruct,fluency,ABSTAIN,,,ABSTAIN,,,False,False
+SummEval,relevance,0.29411764705882354,1,0.3125,2,True,False,openai/gpt-oss-20b,meta-llama/llama-3.3-70b-instruct | openai/gpt-oss-20b,relevance,SELECT: openai/gpt-oss-20b,openai/gpt-oss-20b,0.29411764705882354,ABSTAIN,,,True,True

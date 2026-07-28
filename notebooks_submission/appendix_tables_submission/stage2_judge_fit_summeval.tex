@@ -1,0 +1,50 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Full Stage~2 judge calibration diagnostics for SummEval. Status is based on the operational outfit MNSQ interval $[0.5,1.5]$.}
+\label{tab:app-stage2-summeval}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrl}
+\toprule
+Dim. & Judge & Infit & Outfit & Status \\
+\midrule
+coherence & DeepSeek-v3.2 & 1.060 & 1.034 & Pass \\
+coherence & Gemma-3-27B & 1.054 & 1.044 & Pass \\
+coherence & Llama-3.3-70B & 1.066 & 1.068 & Pass \\
+coherence & qwen3-14b & 1.103 & 1.084 & Pass \\
+coherence & Qwen3-Next-80B & 1.121 & 1.120 & Pass \\
+coherence & GPT-OSS-120B & 1.109 & 1.134 & Pass \\
+coherence & GPT-OSS-20B & 1.103 & 1.135 & Pass \\
+coherence & Llama-3.2-3B & 1.222 & 1.251 & Pass \\
+coherence & Gemma-3-4B & 1.219 & 1.251 & Pass \\
+consistency & Gemma-3-27B & 0.884 & 0.744 & Pass \\
+consistency & DeepSeek-v3.2 & 0.863 & 0.787 & Pass \\
+consistency & GPT-OSS-120B & 0.939 & 1.127 & Pass \\
+consistency & Llama-3.3-70B & 1.005 & 1.129 & Pass \\
+consistency & Qwen3-Next-80B & 1.031 & 1.205 & Pass \\
+consistency & GPT-OSS-20B & 0.955 & 1.332 & Pass \\
+consistency & qwen3-14b & 1.058 & 1.417 & Pass \\
+consistency & Llama-3.2-3B & 1.465 & 1.702 & High \\
+consistency & Gemma-3-4B & 1.341 & 1.743 & High \\
+fluency & Gemma-3-27B & 1.081 & 1.104 & Pass \\
+fluency & DeepSeek-v3.2 & 1.091 & 1.121 & Pass \\
+fluency & Llama-3.2-3B & 1.197 & 1.248 & Pass \\
+fluency & Gemma-3-4B & 1.201 & 1.250 & Pass \\
+fluency & Llama-3.3-70B & 1.246 & 1.435 & Pass \\
+fluency & qwen3-14b & 1.309 & 1.501 & High \\
+fluency & Qwen3-Next-80B & 1.231 & 1.554 & High \\
+fluency & GPT-OSS-120B & 1.278 & 1.780 & High \\
+fluency & GPT-OSS-20B & 1.361 & 2.015 & High \\
+relevance & Gemma-3-27B & 0.967 & 0.972 & Pass \\
+relevance & Llama-3.3-70B & 0.999 & 0.994 & Pass \\
+relevance & Qwen3-Next-80B & 1.047 & 1.057 & Pass \\
+relevance & DeepSeek-v3.2 & 1.054 & 1.059 & Pass \\
+relevance & Gemma-3-4B & 1.032 & 1.080 & Pass \\
+relevance & qwen3-14b & 1.081 & 1.081 & Pass \\
+relevance & Llama-3.2-3B & 1.080 & 1.082 & Pass \\
+relevance & GPT-OSS-120B & 1.076 & 1.088 & Pass \\
+relevance & GPT-OSS-20B & 1.091 & 1.097 & Pass \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

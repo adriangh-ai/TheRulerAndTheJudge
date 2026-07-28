@@ -1,0 +1,57 @@
+{
+  "5w1h": {
+    "deepseek/deepseek-v3.2": 42.14144909850395,
+    "google/gemma-3-27b-it": 4008.533015065768,
+    "google/gemma-3-4b-it": 8.690765357412973,
+    "meta-llama/llama-3.2-3b-instruct": 11.273415044990267,
+    "meta-llama/llama-3.3-70b-instruct": 50.752701245466504,
+    "openai/gpt-oss-120b": 4.921249386560539,
+    "openai/gpt-oss-20b": 4.800427928687563,
+    "qwen/qwen3-14b": 5.179784202792436,
+    "qwen/qwen3-next-80b-a3b-instruct": 7.541810395689981
+  },
+  "coherence": {
+    "deepseek/deepseek-v3.2": 114.58905429643337,
+    "google/gemma-3-27b-it": 59.27245254273168,
+    "google/gemma-3-4b-it": 22.068835261767443,
+    "meta-llama/llama-3.2-3b-instruct": 11.766643733591524,
+    "meta-llama/llama-3.3-70b-instruct": 23.827000729171875,
+    "openai/gpt-oss-120b": 8.384585568108736,
+    "openai/gpt-oss-20b": 33.1162869544974,
+    "qwen/qwen3-14b": 23.488217240984426,
+    "qwen/qwen3-next-80b-a3b-instruct": 36.84359738591848
+  },
+  "consistency": {
+    "deepseek/deepseek-v3.2": 7.986387865964081,
+    "google/gemma-3-27b-it": 24.29583309009637,
+    "google/gemma-3-4b-it": 16.760384684366564,
+    "meta-llama/llama-3.2-3b-instruct": 10.105580762973322,
+    "meta-llama/llama-3.3-70b-instruct": 10.319776509107333,
+    "openai/gpt-oss-120b": 4.3813114174256675,
+    "openai/gpt-oss-20b": 3.790848980589913,
+    "qwen/qwen3-14b": 5.07653024250329,
+    "qwen/qwen3-next-80b-a3b-instruct": 12.822498663812244
+  },
+  "fluency": {
+    "deepseek/deepseek-v3.2": 11.833569068581957,
+    "google/gemma-3-27b-it": 17.70822704109538,
+    "google/gemma-3-4b-it": 18.399481634987104,
+    "meta-llama/llama-3.2-3b-instruct": 14.50060098447217,
+    "meta-llama/llama-3.3-70b-instruct": 14.970686224535118,
+    "openai/gpt-oss-120b": 12.478833727465796,
+    "openai/gpt-oss-20b": 14.230507280645309,
+    "qwen/qwen3-14b": 13.618666734626158,
+    "qwen/qwen3-next-80b-a3b-instruct": 7.889280210405453
+  },
+  "relevance": {
+    "deepseek/deepseek-v3.2": 20.491306352046013,
+    "google/gemma-3-27b-it": 27.327196187601203,
+    "google/gemma-3-4b-it": 12.830686060864734,
+    "meta-llama/llama-3.2-3b-instruct": 6.294786832267115,
+    "meta-llama/llama-3.3-70b-instruct": 8.12361139712996,
+    "openai/gpt-oss-120b": 4.960188226856989,
+    "openai/gpt-oss-20b": 5.681088204624083,
+    "qwen/qwen3-14b": 12.733538702449593,
+    "qwen/qwen3-next-80b-a3b-instruct": 24.168501977816
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "coherence": {
+    "Qwen/Qwen3-Next-80B-A3B-Instruct": 4.036962365992199,
+    "deepseek/deepseek-v3.2": 2.5386412344444116,
+    "google/gemma-3-27b-it": 2.5841051637560195,
+    "google/gemma-3-4b-it": 2.1496939701587277,
+    "meta-llama/Llama-3.2-3B-Instruct": 1.5146525409973204,
+    "meta-llama/llama-3.3-70b-instruct": 2.4721946975677955,
+    "openai/gpt-oss-120b": 2.576398838007061,
+    "openai/gpt-oss-20b": 2.0195342621103785,
+    "qwen/qwen3-14b": 1.9257276348629921
+  },
+  "consistency": {
+    "Qwen/Qwen3-Next-80B-A3B-Instruct": 1.6756294880812996,
+    "deepseek/deepseek-v3.2": 3.5945910196958852,
+    "google/gemma-3-27b-it": 1.6267167485799578,
+    "google/gemma-3-4b-it": 1.3829877625615281,
+    "meta-llama/Llama-3.2-3B-Instruct": 1.9525113021491718,
+    "meta-llama/llama-3.3-70b-instruct": 1.7668896401066763,
+    "openai/gpt-oss-120b": 1.2393943086661192,
+    "openai/gpt-oss-20b": 1.8369251269999114,
+    "qwen/qwen3-14b": 1.8078883240119583
+  },
+  "fluency": {
+    "Qwen/Qwen3-Next-80B-A3B-Instruct": 2.677239018629752,
+    "deepseek/deepseek-v3.2": 1.6677759867565087,
+    "google/gemma-3-27b-it": 3.043354257469094,
+    "google/gemma-3-4b-it": 0.9173024167543747,
+    "meta-llama/Llama-3.2-3B-Instruct": 1.242821334095594,
+    "meta-llama/llama-3.3-70b-instruct": 3.5008927311362736,
+    "openai/gpt-oss-120b": 4.168558846624936,
+    "openai/gpt-oss-20b": 4.759616304067085,
+    "qwen/qwen3-14b": 4.254544685367149
+  },
+  "relevance": {
+    "Qwen/Qwen3-Next-80B-A3B-Instruct": 2.6691581165430405,
+    "deepseek/deepseek-v3.2": 1.7829548960172863,
+    "google/gemma-3-27b-it": 1.8832789667972967,
+    "google/gemma-3-4b-it": 1.255117942145568,
+    "meta-llama/Llama-3.2-3B-Instruct": 1.116804540861164,
+    "meta-llama/llama-3.3-70b-instruct": 1.851481015498977,
+    "openai/gpt-oss-120b": 2.025660097491983,
+    "openai/gpt-oss-20b": 1.3862859251334902,
+    "qwen/qwen3-14b": 1.7086780983293632
+  }
+}

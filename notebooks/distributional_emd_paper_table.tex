@@ -1,0 +1,45 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{
+Distributional fidelity before and after calibration.
+Raw EMD compares each judge's raw ordinal-score distribution
+with the empirical human distribution. Calibrated EMD maps the
+judge-derived posterior through the human response model.
+Lower is better. ``Improved'' counts judges for which calibration
+reduces EMD, and
+$\Delta=\mathrm{Raw\ EMD}-\mathrm{Calibrated\ EMD}$.
+}
+\label{tab:distributional-emd}
+\begin{tabular}{llrrrr}
+\toprule
+\textbf{Dataset}
+& \textbf{Dimension}
+& \textbf{Improved}
+& \textbf{Raw EMD $\downarrow$}
+& \textbf{Calibrated EMD $\downarrow$}
+& $\boldsymbol{\Delta}$ \\
+\midrule
+SummEval & coherence & 9/9 & 1.580 & 1.259 & 0.321 \\
+SummEval & consistency & 6/9 & 0.419 & 0.271 & 0.148 \\
+SummEval & fluency & 9/9 & 1.924 & 0.402 & 1.522 \\
+SummEval & relevance & 9/9 & 2.149 & 1.297 & 0.853 \\
+\midrule
+HiTZ-BASSE & 5W1H & 7/9 & 1.875 & 1.622 & 0.252 \\
+HiTZ-BASSE & coherence & 2/9 & 2.054 & 2.129 & -0.074 \\
+HiTZ-BASSE & consistency & 2/9 & 1.165 & 1.045 & 0.120 \\
+HiTZ-BASSE & fluency & 4/9 & 0.538 & 0.460 & 0.078 \\
+HiTZ-BASSE & relevance & 9/9 & 1.970 & 1.817 & 0.153 \\
+\midrule
+HANNA & coherence & 9/9 & 2.765 & 1.456 & 1.308 \\
+HANNA & complexity & 9/9 & 2.276 & 1.373 & 0.903 \\
+HANNA & empathy & 9/9 & 2.492 & 1.337 & 1.155 \\
+HANNA & engagement & 9/9 & 2.057 & 1.328 & 0.729 \\
+HANNA & relevance & 9/9 & 1.710 & 1.096 & 0.614 \\
+HANNA & surprise & 9/9 & 2.405 & 1.149 & 1.255 \\
+\midrule
+All & all dimensions & 111/135 & 1.825 & 1.203 & 0.623 \\
+\bottomrule
+\end{tabular}
+\end{table}

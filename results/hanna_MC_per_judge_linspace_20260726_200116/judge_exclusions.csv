@@ -1,0 +1,10 @@
+file,n_rows_loaded,n_rows_after_dropna,n_dropped_nan_score
+hanna_qwen_qwen3-14b.parquet,6328,6328,0
+hanna_qwen_qwen3-next-80b-a3b-instruct.parquet,6332,6332,0
+hanna_meta-llama_llama-3.3-70b-instruct.parquet,6146,6146,0
+hanna_google_gemma-3-27b-it.parquet,6335,6332,3
+hanna_openai_gpt-oss-120b.parquet,6328,6328,0
+hanna_meta-llama_llama-3.2-3b-instruct.parquet,5628,5627,1
+hanna_deepseek_deepseek-v3.2.parquet,6326,6326,0
+hanna_openai_gpt-oss-20b.parquet,6326,6326,0
+hanna_google_gemma-3-4b-it.parquet,6296,6254,42

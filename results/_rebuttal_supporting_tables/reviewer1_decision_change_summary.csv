@@ -1,0 +1,9 @@
+comparison,changed,total,fraction_changed
+Raw-score Spearman winner vs latent Spearman winner (all judges),6,15,0.4
+Raw-score Spearman winner vs risk-sensitive winner (conditional on a judge being selected),9,9,1.0
+Raw-score Spearman winner vs operational framework rank outcome,9,15,0.6
+Latent Spearman winner vs operational framework rank outcome,5,15,0.3333333333333333
+Raw-score Spearman winner vs operational pairwise-fidelity outcome,10,15,0.6666666666666666
+Raw-score Spearman winner vs risk-sensitive outcome (different/refuse/abstain),15,15,1.0
+Framework refusals,4,15,0.26666666666666666
+Risk-sensitive abstentions after Stages 1 and 2 pass,2,15,0.13333333333333333

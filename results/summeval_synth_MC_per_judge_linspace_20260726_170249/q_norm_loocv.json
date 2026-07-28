@@ -1,0 +1,13 @@
+{
+  "coherence": {
+    "synthetic__00_empirical_identity": 2.3283187081766945,
+    "synthetic__10_coherent_lenient_shift_plus1": 2.79050368888861,
+    "synthetic__13_category_collapse_3level": 2.7448678216600655,
+    "synthetic__20_item_permute_within_system": 1.932811882792422,
+    "synthetic__55_targeted_supported_pair_flip": 21.560158428162104,
+    "synthetic__60_random_noise_0p8": 2.1024339473598155,
+    "synthetic__m_compression_rho0p9": 10.998017209274012,
+    "synthetic__m_false_confidence_close_rho0p9": 9.970233722894946,
+    "synthetic__m_overseparation_rho0p9": 8.018452003725875
+  }
+}

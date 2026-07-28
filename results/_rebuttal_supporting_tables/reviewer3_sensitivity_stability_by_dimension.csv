@@ -1,0 +1,16 @@
+dataset,dimension,n_configurations,rank_selection_stability,pairwise_selection_stability,risk_selection_stability,decision_outcome_stability,n_distinct_rank_selections,n_distinct_pairwise_selections,n_distinct_risk_outcomes
+HANNA,Coherence,375,1.0,1.0,0.616,0.896,1,1,4
+HANNA,Complexity,375,1.0,1.0,0.192,0.64,1,1,4
+HANNA,Empathy,375,1.0,1.0,0.56,1.0,1,1,2
+HANNA,Engagement,375,1.0,1.0,0.568,0.6,1,1,3
+HANNA,Relevance,375,1.0,1.0,0.8,0.824,1,1,3
+HANNA,Surprise,375,1.0,1.0,0.952,0.952,1,1,2
+HiTZ-BASSE,5w1h,375,0.6666666666666666,0.6666666666666666,0.19733333333333333,0.272,2,2,3
+HiTZ-BASSE,coherence,375,0.6666666666666666,0.6666666666666666,0.9413333333333334,0.6666666666666666,2,2,2
+HiTZ-BASSE,consistency,375,0.6666666666666666,0.6666666666666666,1.0,0.6666666666666666,2,2,1
+HiTZ-BASSE,fluency,375,1.0,1.0,1.0,1.0,1,1,1
+HiTZ-BASSE,relevance,375,0.6666666666666666,0.6666666666666666,0.9706666666666667,0.6666666666666666,2,2,3
+SummEval,coherence,375,1.0,1.0,0.968,0.968,1,1,2
+SummEval,consistency,375,0.6666666666666666,0.6666666666666666,0.016,0.64,2,2,4
+SummEval,fluency,375,1.0,1.0,0.96,0.96,1,1,2
+SummEval,relevance,375,1.0,1.0,0.488,0.488,1,1,5

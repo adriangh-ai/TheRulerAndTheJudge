@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Full synthetic judge stress-test results. Rows instantiate different validity failures rather than a single ranking. Columns requiring optional legacy artifacts are shown only when reconstructable.}
+\label{tab:app-synthetic-full}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Synthetic judge & Raw $\rho$ & $\theta\rho$ & Item $\rho$ & nSMF & $L_{mag}$ & $L_{dir}$ & FSR & Item $>1.5$ \\
+\midrule
+Empirical identity & 0.980 & 0.975 & 0.965 & 0.982 & 0.016 & 0.002 & 0.125 & 4\% \\
+Lenient shift & 0.966 & 0.949 & 0.915 & 0.960 & 0.035 & 0.006 & 0.062 & 3\% \\
+3-level collapse & 0.961 & 0.949 & 0.913 & 0.959 & 0.035 & 0.006 & 0.125 & 0\% \\
+Compression & 0.875 & 0.750 & 0.642 & 0.309 & 0.646 & 0.045 & 0.000 & 35\% \\
+Over-separation & 0.934 & 0.934 & 0.590 & 0.725 & 0.225 & 0.050 & 0.500 & 5\% \\
+False confidence on close pairs & 0.912 & 0.939 & 0.610 & 0.413 & 0.539 & 0.048 & 1.000 & 1\% \\
+Targeted supported-pair flip & 0.391 & 0.355 & 0.731 & -0.365 & 0.199 & 1.165 & 0.188 & 25\% \\
+20 itepermute within system & 0.980 & 0.978 & 0.310 & 0.987 & 0.011 & 0.002 & 0.125 & 14\% \\
+60 randonoise 0p8 & 0.975 & 0.956 & 0.756 & 0.961 & 0.034 & 0.005 & 0.438 & 10\% \\
+randonoise &  & 0.924 &  & 0.954 & 0.035 & 0.011 & 0.500 & 8\% \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

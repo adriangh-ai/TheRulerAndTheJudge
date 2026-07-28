@@ -1,0 +1,27 @@
+{
+  "data": {
+    "benchmark": "hanna",
+    "judge_files": [
+      "examples/custom_judge/custom_judge.parquet"
+    ],
+    "dimensions": [
+      "Complexity"
+    ]
+  },
+  "sampling": {
+    "draws": 100,
+    "chains_audit": 2,
+    "chains_cv": 2,
+    "target_accept": 0.9,
+    "sampler_seed": 42,
+    "anchor_draw_compute_n": 32,
+    "anchor_draw_fit_n": 32,
+    "anchor_draw_compute_seed": 42,
+    "anchor_draw_fit_seed": 123
+  },
+  "outputs": {
+    "results_root": "results/custom_judge_example",
+    "save_artifacts": false,
+    "save_idata": false
+  }
+}

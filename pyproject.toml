@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lm-bmfrm"
+version = "0.1.0"
+description = "Psychometric auditing and predictive evaluation of LLM judges"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "arviz",
+  "datasets",
+  "jax",
+  "jaxlib",
+  "numpy",
+  "numpyro",
+  "pandas",
+  "pyarrow",
+  "pymc>=5",
+  "pytensor",
+  "rich",
+  "scikit-learn",
+  "scipy",
+  "tqdm",
+]
+
+[project.optional-dependencies]
+generation = ["torch", "transformers", "bitsandbytes", "openai"]
+uncertainty = ["lm-polygraph"]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+lm-bmfrm-evaluate = "lm_bmfrm.entrypoints:evaluate"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+lm_bmfrm = ["configs/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = ["legacy"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]

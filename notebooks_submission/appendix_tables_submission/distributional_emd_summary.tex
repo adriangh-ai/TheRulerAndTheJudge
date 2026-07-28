@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Aggregated distributional fidelity by dataset and dimension. $\Delta$ is raw EMD minus calibrated EMD. Each judge receives equal weight; system counts and n_items_eval are not aggregation weights.}
+\label{tab:app-distributional-summary}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrr}
+\toprule
+Dataset & Dim. & Improved & Raw EMD & Cal. EMD & $\Delta$ \\
+\midrule
+HiTZ-BASSE & 5w1h & 7/9 & 1.895 & 1.636 & 0.259 \\
+HiTZ-BASSE & coherence & 2/9 & 2.054 & 2.128 & -0.074 \\
+HiTZ-BASSE & consistency & 2/9 & 1.165 & 1.044 & 0.121 \\
+HiTZ-BASSE & fluency & 4/9 & 0.538 & 0.460 & 0.078 \\
+HiTZ-BASSE & relevance & 9/9 & 1.970 & 1.817 & 0.154 \\
+SummEval & coherence & 9/9 & 1.580 & 1.259 & 0.321 \\
+SummEval & consistency & 6/9 & 0.419 & 0.271 & 0.148 \\
+SummEval & fluency & 9/9 & 1.924 & 0.402 & 1.522 \\
+SummEval & relevance & 9/9 & 2.149 & 1.297 & 0.852 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

@@ -1,0 +1,10 @@
+file,n_rows_loaded,n_rows_after_dropna,n_dropped_nan_score
+hitz_basse_deepseek_deepseek-v3.2.parquet,4945,4945,0
+hitz_basse_google_gemma-3-27b-it.parquet,4950,4950,0
+hitz_basse_google_gemma-3-4b-it.parquet,4926,4918,8
+hitz_basse_meta-llama_llama-3.2-3b-instruct.parquet,4922,4915,7
+hitz_basse_meta-llama_llama-3.3-70b-instruct.parquet,4832,4832,0
+hitz_basse_openai_gpt-oss-120b.parquet,4929,4929,0
+hitz_basse_openai_gpt-oss-20b.parquet,4941,4941,0
+hitz_basse_qwen_qwen3-14b.parquet,4934,4934,0
+hitz_basse_qwen_qwen3-next-80b-a3b-instruct.parquet,4938,4937,1

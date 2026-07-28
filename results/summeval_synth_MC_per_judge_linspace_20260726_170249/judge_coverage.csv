@@ -1,0 +1,10 @@
+dimension,judge_model,expected_cells,observed_cells,n_rows,missing_cells,coverage_frac
+coherence,synthetic__00_empirical_identity,1700,1700,1700,0,1.0
+coherence,synthetic__10_coherent_lenient_shift_plus1,1700,1700,1700,0,1.0
+coherence,synthetic__13_category_collapse_3level,1700,1700,1700,0,1.0
+coherence,synthetic__20_item_permute_within_system,1700,1700,1700,0,1.0
+coherence,synthetic__55_targeted_supported_pair_flip,1700,1700,1700,0,1.0
+coherence,synthetic__60_random_noise_0p8,1700,1700,1700,0,1.0
+coherence,synthetic__m_compression_rho0p9,1700,1700,1700,0,1.0
+coherence,synthetic__m_false_confidence_close_rho0p9,1700,1700,1700,0,1.0
+coherence,synthetic__m_overseparation_rho0p9,1700,1700,1700,0,1.0
