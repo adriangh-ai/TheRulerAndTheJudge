@@ -545,13 +545,10 @@ def pairwise_dominance_probability(
     # Outer product of posterior masses.
     joint = np.outer(posterior_a, posterior_b)
 
-    # Mid-dominance convention for a discretized latent grid:
-    # P(a > b) + 0.5 P(a = b). This assigns identical posteriors a neutral
-    # probability of 0.5 and preserves p_ab + p_ba = 1 exactly.
+    # Indicator(theta_a > theta_b)
     gt_mask = theta_grid[:, None] > theta_grid[None, :]
-    p_gt = float(joint[gt_mask].sum())
-    p_eq = float(np.dot(posterior_a, posterior_b))
-    return float(p_gt + 0.5 * p_eq)
+
+    return float(joint[gt_mask].sum())
 
 
 def compute_pairwise_probabilities(
