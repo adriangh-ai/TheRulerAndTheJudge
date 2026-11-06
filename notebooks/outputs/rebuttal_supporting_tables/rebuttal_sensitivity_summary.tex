@@ -1,0 +1,22 @@
+% Requires \usepackage{booktabs,graphicx}.
+% Generated from saved rebuttal CSV summaries.
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\caption{Operational sensitivity across 15 dataset--dimension settings. The full grid has 375 policies and reports the percentage of selections unchanged from baseline. Other rows report numbers of settings with changed selections, in the order of the tested values, while other parameters stay at baseline. Matching non-selections count as unchanged. Baseline: $\tau_H=\tau_L=0.80$, $\gamma=0.30$, and both infit and outfit MNSQ in $[0.5,1.5]$. Grid frequencies are descriptive, not posterior probabilities; no models were refitted.}
+\label{tab:rebuttal-sensitivity-summary}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llccc}
+\toprule
+Analysis & Tested values & Rank & nSMF & Risk \\
+\midrule
+Full factorial grid & 375 configurations & 88.9\% stable & 88.9\% stable & 68.2\% stable \\
+Human support $\tau_H$ & .70 / .75 / .80 / .85 / .90 & 0 / 0 / 0 / 0 / 0 & 0 / 0 / 0 / 0 / 0 & 5 / 4 / 0 / 3 / 5 \\
+Judge support $\tau_L$ & .70 / .75 / .80 / .85 / .90 & 0 / 0 / 0 / 0 / 0 & 0 / 0 / 0 / 0 / 0 & 3 / 2 / 0 / 1 / 4 \\
+FSR tolerance $\gamma$ & .20 / .25 / .30 / .35 / .40 & 0 / 0 / 0 / 0 / 0 & 0 / 0 / 0 / 0 / 0 & 6 / 4 / 0 / 2 / 2 \\
+MNSQ interval & [.5,1.3] / [.5,1.5] / [.5,2.0] & 1 / 0 / 4 & 1 / 0 / 4 & 2 / 0 / 0 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

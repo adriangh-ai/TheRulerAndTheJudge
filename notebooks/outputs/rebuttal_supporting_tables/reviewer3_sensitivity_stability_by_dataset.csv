@@ -1,0 +1,4 @@
+dataset,n_dataset_dimensions,n_configurations,rank_selection_stability,pairwise_selection_stability,risk_selection_stability,decision_outcome_stability
+HANNA,6,375,1.0,1.0,0.6146666666666667,0.8186666666666667
+HiTZ-BASSE,5,375,0.7333333333333333,0.7333333333333333,0.8218666666666666,0.6544
+SummEval,4,375,0.9166666666666666,0.9166666666666666,0.608,0.764

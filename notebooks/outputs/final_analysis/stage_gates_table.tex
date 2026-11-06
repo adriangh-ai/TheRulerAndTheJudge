@@ -1,0 +1,30 @@
+\begin{table}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\caption{Cross-dataset staged audit. SR is supported resolution at $\tau_H=0.8$. Stage~2 pass counts judges with outfit MNSQ in $[0.5,1.5]$; positive nSMF counts judges above the no-preference baseline. Both counts use all judges.}
+\label{tab:stage-gates}
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Dataset} & \textbf{Dimension} & \textbf{Stage~1} & $\boldsymbol{\Delta^{95}/\mathrm{Spread}_{80}}$ & \textbf{SR} & \textbf{Stage~2 pass} & \textbf{Positive nSMF} \\
+\midrule
+SummEval & coherence & fine-grained & 0.110 & 0.875 & 9/9 & 9/9 \\
+SummEval & relevance & fine-grained & 0.157 & 0.882 & 9/9 & 9/9 \\
+SummEval & fluency & coarse usable & 0.295 & 0.750 & 5/9 & 5/9 \\
+SummEval & consistency & coarse usable & 0.333 & 0.794 & 7/9 & 9/9 \\
+\midrule
+HiTZ-BASSE & 5W1H & fine-grained & 0.243 & 0.833 & 7/9 & 8/9 \\
+HiTZ-BASSE & coherence & fine-grained & 0.167 & 0.819 & 0/9 & 5/9 \\
+HiTZ-BASSE & relevance & coarse usable & 0.329 & 0.757 & 0/9 & 1/9 \\
+HiTZ-BASSE & consistency & blunt & 0.616 & 0.594 & 0/9 & 3/9 \\
+HiTZ-BASSE & fluency & unacceptable & 1.118 & 0.486 & 3/9 & 0/9 \\
+\midrule
+HANNA & Empathy & coarse usable & 0.339 & 0.855 & 9/9 & 8/9 \\
+HANNA & Engagement & fine-grained & 0.243 & 0.873 & 9/9 & 8/9 \\
+HANNA & Complexity & fine-grained & 0.167 & 0.873 & 9/9 & 9/9 \\
+HANNA & Surprise & coarse usable & 0.319 & 0.727 & 9/9 & 6/9 \\
+HANNA & Relevance & coarse usable & 0.332 & 0.764 & 9/9 & 8/9 \\
+HANNA & Coherence & coarse usable & 0.292 & 0.818 & 9/9 & 7/9 \\
+\bottomrule
+\end{tabular}
+\end{table}

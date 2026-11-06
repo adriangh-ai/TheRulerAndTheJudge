@@ -7,23 +7,8 @@ name = "lm-bmfrm"
 version = "0.1.0"
 description = "Psychometric auditing and predictive evaluation of LLM judges"
 readme = "README.md"
-requires-python = ">=3.10,<3.13"
-dependencies = [
-  "arviz",
-  "datasets",
-  "jax",
-  "jaxlib",
-  "numpy",
-  "numpyro",
-  "pandas",
-  "pyarrow",
-  "pymc>=5",
-  "pytensor",
-  "rich",
-  "scikit-learn",
-  "scipy",
-  "tqdm",
-]
+requires-python = ">=3.11,<3.13"
+dynamic = ["dependencies"]
 
 [project.optional-dependencies]
 generation = ["torch", "transformers", "bitsandbytes", "openai"]
@@ -32,6 +17,9 @@ dev = ["pytest", "ruff"]
 
 [project.scripts]
 lm-bmfrm-evaluate = "lm_bmfrm.entrypoints:evaluate"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
 
 [tool.setuptools.packages.find]
 where = ["src"]

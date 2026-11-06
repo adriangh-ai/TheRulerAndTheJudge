@@ -23,13 +23,18 @@ The CLI and Python interface use the same Stage 1–3 orchestration path.
 ## Before running
 
 1. Work from the repository root.
-2. Install the package with `pip install -e .`.
+2. Install dependencies with `pip install -r requirements.txt`, then install
+   the package with `pip install -e .`. Use Python 3.11 or 3.12; Python 3.11
+   is recommended for reproducing the released environment.
 3. Read the selected JSON configuration.
 4. Preserve the order of `data.judge_files`.
 5. Do not modify seeds, file ordering, dimensions, sampling settings, or
    thresholds when reproducing an archived experiment.
 6. Expect CPU execution when no compatible JAX GPU is available; it may be
    considerably slower.
+
+`requirements.txt` is the authoritative dependency list, including the JAX
+CUDA 12 packages. `pyproject.toml` loads its dependencies from that file.
 
 ## Input contract
 

@@ -1,0 +1,6 @@
+{
+  "SummEval": "../results/summeval_MC_per_judge_linspace_20260726_002902",
+  "HiTZ-BASSE": "../results/hitz_basse_MC_per_judge_linspace_20260726_130449",
+  "HANNA": "../results/hanna_MC_per_judge_linspace_20260726_200116",
+  "SummEval-synthetic": "../results/summeval_synth_MC_per_judge_linspace_20260726_170249"
+}

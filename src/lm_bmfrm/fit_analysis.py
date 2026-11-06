@@ -9,6 +9,7 @@ from rich import box
 
 from scipy.stats import spearmanr, kendalltau
 
+
 def _ensure_zero_based_labels(y_obs, n_cats):
     y_obs = np.asarray(y_obs)
     if y_obs.min() == 0 and y_obs.max() == n_cats - 1:

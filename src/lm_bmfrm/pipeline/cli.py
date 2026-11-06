@@ -417,6 +417,9 @@ def main(argv=None):
     loocv_artifact_manifest = pd.DataFrame()
 
     if args.cv_mode == "nested":
+        Console().print(
+            "[bold cyan]Stage 3 starting: nested cross-validation (inner LOOCV).[/bold cyan]"
+        )
         pm_inputs = pd.concat([df_human, judge_df], ignore_index=True)
         min_supported_pairs = (
             None if args.outer_min_supported_pairs < 0 else args.outer_min_supported_pairs
@@ -484,6 +487,9 @@ def main(argv=None):
         df_lb = pd.concat([df_lb_inner, df_lb_test], ignore_index=True)
         df_lb_summary = summarize_outer_leaderboard(df_lb)
     else:
+        Console().print(
+            "[bold cyan]Stage 3 starting: LOOCV (leave-one-system-out cross-validation).[/bold cyan]"
+        )
         (
             df_oof,
             q_raw,

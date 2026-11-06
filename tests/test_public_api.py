@@ -18,7 +18,7 @@ def _write_fake_run(run_dir):
     )
 
     pd.DataFrame(
-        [{"Dimension": "coherence", "Model": "judge", "NFSM": 0.5}]
+        [{"Dimension": "coherence", "Model": "judge", "NSMF": 0.5}]
     ).to_parquet(run_dir / "leaderboard_results.parquet", index=False)
 
     pd.DataFrame(

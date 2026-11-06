@@ -30,8 +30,6 @@ def compute_ordered_logprob_matrix(eta_matrix, cutpoints, k):
     return np.log(np.maximum(prob, 1e-15))
 
 
-
-
 def get_system_posterior_human(
     group_df_human,
     human_rater_params,

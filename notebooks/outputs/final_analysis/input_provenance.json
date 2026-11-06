@@ -1,0 +1,362 @@
+{
+  "SummEval": {
+    "status": "complete",
+    "run_dir": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902",
+    "resolved_config": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902/resolved_config.json",
+    "provenance": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902/run_config.json",
+    "input_manifest": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902/judge_input_manifest.parquet",
+    "tables": {
+      "leaderboard": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902/leaderboard_results.parquet",
+      "predictions": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902/predictions.parquet",
+      "human_audit": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902/human_audit.parquet",
+      "human_item_audit": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902/human_item_audit.parquet",
+      "llm_audit": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902/llm_audit.parquet",
+      "llm_item_audit": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902/llm_item_audit.parquet",
+      "benchmark_cards": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902/benchmark_cards.parquet",
+      "benchmark_curves": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902/benchmark_curves.parquet",
+      "rhat_records": "/workspaces/TheRulerAndTheJudge-main/results/summeval_MC_per_judge_linspace_20260726_002902/rhat_records.parquet"
+    },
+    "effective_config": {
+      "data": {
+        "benchmark": "summeval",
+        "dimensions": [
+          "coherence",
+          "consistency",
+          "fluency",
+          "relevance"
+        ],
+        "judge_files": [
+          "llm_judge_outputs/summeval/summeval_Llama-3.2-3B-Instruct_outputs.parquet",
+          "llm_judge_outputs/summeval/summeval_Qwen_Qwen3-Next-80B-A3B-Instruct_api_judge_results.parquet",
+          "llm_judge_outputs/summeval/summeval_deepseek_deepseek-v3.2_api_judge_results.parquet",
+          "llm_judge_outputs/summeval/summeval_gemma3_4b_it_outputs.parquet",
+          "llm_judge_outputs/summeval/summeval_google_gemma-3-27b-it_api_judge_results.parquet",
+          "llm_judge_outputs/summeval/summeval_meta-llama_llama-3.3-70b-instruct_api_judge_results.parquet",
+          "llm_judge_outputs/summeval/summeval_openai_gpt-oss-120b_api_judge_results.parquet",
+          "llm_judge_outputs/summeval/summeval_openai_gpt-oss-20b_api_judge_results.parquet",
+          "llm_judge_outputs/summeval/summeval_qwen_qwen3-14b.parquet"
+        ],
+        "judge_folder": "llm_judge_outputs"
+      },
+      "evaluation": {
+        "conformal_alpha": 0.05,
+        "cv_mode": "loocv",
+        "kfold_seed": 42,
+        "tau_h": 0.8,
+        "tau_l": 0.8,
+        "theta_grid": {
+          "max": 8.0,
+          "min": -8.0,
+          "num": 401
+        }
+      },
+      "model": {
+        "add_alpha_main": false,
+        "anchor_draw_selection": "linspace",
+        "audit_add_alpha": false,
+        "dif_variant": "mc",
+        "use_mc": true
+      },
+      "nested_cv": {
+        "outer_constraint_tau_h": 0.8,
+        "outer_max_candidate_splits": 20000,
+        "outer_max_sr_h": null,
+        "outer_max_supported_pairs": -1,
+        "outer_min_spread_fraction": 0.5,
+        "outer_min_sr_h": null,
+        "outer_min_supported_pairs": -1,
+        "outer_seed": 42,
+        "outer_split_strategy": "constrained_blocked",
+        "outer_splits": 10,
+        "outer_stratify_dimension": "__per_dimension__",
+        "outer_test_size": 0.3
+      },
+      "outputs": {
+        "results_root": "results",
+        "save_artifacts": true,
+        "save_idata": true
+      },
+      "sampling": {
+        "anchor_draw_compute_n": 200,
+        "anchor_draw_compute_seed": 42,
+        "anchor_draw_fit_n": 200,
+        "anchor_draw_fit_seed": 123,
+        "chains_audit": 4,
+        "chains_cv": 4,
+        "draws": 2000,
+        "sampler_seed": 42,
+        "target_accept": 0.99
+      }
+    }
+  },
+  "HiTZ-BASSE": {
+    "status": "complete",
+    "run_dir": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449",
+    "resolved_config": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449/resolved_config.json",
+    "provenance": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449/run_config.json",
+    "input_manifest": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449/judge_input_manifest.parquet",
+    "tables": {
+      "leaderboard": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449/leaderboard_results.parquet",
+      "predictions": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449/predictions.parquet",
+      "human_audit": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449/human_audit.parquet",
+      "human_item_audit": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449/human_item_audit.parquet",
+      "llm_audit": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449/llm_audit.parquet",
+      "llm_item_audit": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449/llm_item_audit.parquet",
+      "benchmark_cards": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449/benchmark_cards.parquet",
+      "benchmark_curves": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449/benchmark_curves.parquet",
+      "rhat_records": "/workspaces/TheRulerAndTheJudge-main/results/hitz_basse_MC_per_judge_linspace_20260726_130449/rhat_records.parquet"
+    },
+    "effective_config": {
+      "data": {
+        "benchmark": "hitz_basse",
+        "dimensions": [
+          "coherence",
+          "consistency",
+          "fluency",
+          "relevance",
+          "5w1h"
+        ],
+        "judge_files": [
+          "llm_judge_outputs/hitz_basse/hitz_basse_deepseek_deepseek-v3.2.parquet",
+          "llm_judge_outputs/hitz_basse/hitz_basse_google_gemma-3-27b-it.parquet",
+          "llm_judge_outputs/hitz_basse/hitz_basse_google_gemma-3-4b-it.parquet",
+          "llm_judge_outputs/hitz_basse/hitz_basse_meta-llama_llama-3.2-3b-instruct.parquet",
+          "llm_judge_outputs/hitz_basse/hitz_basse_meta-llama_llama-3.3-70b-instruct.parquet",
+          "llm_judge_outputs/hitz_basse/hitz_basse_openai_gpt-oss-120b.parquet",
+          "llm_judge_outputs/hitz_basse/hitz_basse_openai_gpt-oss-20b.parquet",
+          "llm_judge_outputs/hitz_basse/hitz_basse_qwen_qwen3-14b.parquet",
+          "llm_judge_outputs/hitz_basse/hitz_basse_qwen_qwen3-next-80b-a3b-instruct.parquet"
+        ],
+        "judge_folder": "llm_judge_outputs"
+      },
+      "evaluation": {
+        "conformal_alpha": 0.05,
+        "cv_mode": "loocv",
+        "kfold_seed": 42,
+        "tau_h": 0.8,
+        "tau_l": 0.8,
+        "theta_grid": {
+          "max": 8.0,
+          "min": -8.0,
+          "num": 401
+        }
+      },
+      "model": {
+        "add_alpha_main": false,
+        "anchor_draw_selection": "linspace",
+        "audit_add_alpha": false,
+        "dif_variant": "mc",
+        "use_mc": true
+      },
+      "nested_cv": {
+        "outer_constraint_tau_h": 0.8,
+        "outer_max_candidate_splits": 20000,
+        "outer_max_sr_h": null,
+        "outer_max_supported_pairs": -1,
+        "outer_min_spread_fraction": 0.5,
+        "outer_min_sr_h": null,
+        "outer_min_supported_pairs": -1,
+        "outer_seed": 42,
+        "outer_split_strategy": "constrained_blocked",
+        "outer_splits": 10,
+        "outer_stratify_dimension": "__per_dimension__",
+        "outer_test_size": 0.3
+      },
+      "outputs": {
+        "results_root": "results",
+        "save_artifacts": true,
+        "save_idata": true
+      },
+      "sampling": {
+        "anchor_draw_compute_n": 200,
+        "anchor_draw_compute_seed": 42,
+        "anchor_draw_fit_n": 200,
+        "anchor_draw_fit_seed": 123,
+        "chains_audit": 4,
+        "chains_cv": 4,
+        "draws": 2000,
+        "sampler_seed": 42,
+        "target_accept": 0.99
+      }
+    }
+  },
+  "HANNA": {
+    "status": "complete",
+    "run_dir": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116",
+    "resolved_config": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116/resolved_config.json",
+    "provenance": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116/run_config.json",
+    "input_manifest": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116/judge_input_manifest.parquet",
+    "tables": {
+      "leaderboard": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116/leaderboard_results.parquet",
+      "predictions": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116/predictions.parquet",
+      "human_audit": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116/human_audit.parquet",
+      "human_item_audit": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116/human_item_audit.parquet",
+      "llm_audit": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116/llm_audit.parquet",
+      "llm_item_audit": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116/llm_item_audit.parquet",
+      "benchmark_cards": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116/benchmark_cards.parquet",
+      "benchmark_curves": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116/benchmark_curves.parquet",
+      "rhat_records": "/workspaces/TheRulerAndTheJudge-main/results/hanna_MC_per_judge_linspace_20260726_200116/rhat_records.parquet"
+    },
+    "effective_config": {
+      "data": {
+        "benchmark": "hanna",
+        "dimensions": [
+          "Empathy",
+          "Engagement",
+          "Complexity",
+          "Surprise",
+          "Relevance",
+          "Coherence"
+        ],
+        "judge_files": [
+          "llm_judge_outputs/hanna/hanna_qwen_qwen3-14b.parquet",
+          "llm_judge_outputs/hanna/hanna_qwen_qwen3-next-80b-a3b-instruct.parquet",
+          "llm_judge_outputs/hanna/hanna_meta-llama_llama-3.3-70b-instruct.parquet",
+          "llm_judge_outputs/hanna/hanna_google_gemma-3-27b-it.parquet",
+          "llm_judge_outputs/hanna/hanna_openai_gpt-oss-120b.parquet",
+          "llm_judge_outputs/hanna/hanna_meta-llama_llama-3.2-3b-instruct.parquet",
+          "llm_judge_outputs/hanna/hanna_deepseek_deepseek-v3.2.parquet",
+          "llm_judge_outputs/hanna/hanna_openai_gpt-oss-20b.parquet",
+          "llm_judge_outputs/hanna/hanna_google_gemma-3-4b-it.parquet"
+        ],
+        "judge_folder": "llm_judge_outputs"
+      },
+      "evaluation": {
+        "conformal_alpha": 0.05,
+        "cv_mode": "loocv",
+        "kfold_seed": 42,
+        "tau_h": 0.8,
+        "tau_l": 0.8,
+        "theta_grid": {
+          "max": 8.0,
+          "min": -8.0,
+          "num": 401
+        }
+      },
+      "model": {
+        "add_alpha_main": false,
+        "anchor_draw_selection": "linspace",
+        "audit_add_alpha": false,
+        "dif_variant": "mc",
+        "use_mc": true
+      },
+      "nested_cv": {
+        "outer_constraint_tau_h": 0.8,
+        "outer_max_candidate_splits": 20000,
+        "outer_max_sr_h": null,
+        "outer_max_supported_pairs": -1,
+        "outer_min_spread_fraction": 0.5,
+        "outer_min_sr_h": null,
+        "outer_min_supported_pairs": -1,
+        "outer_seed": 42,
+        "outer_split_strategy": "constrained_blocked",
+        "outer_splits": 10,
+        "outer_stratify_dimension": "__per_dimension__",
+        "outer_test_size": 0.3
+      },
+      "outputs": {
+        "results_root": "results",
+        "save_artifacts": true,
+        "save_idata": true
+      },
+      "sampling": {
+        "anchor_draw_compute_n": 200,
+        "anchor_draw_compute_seed": 42,
+        "anchor_draw_fit_n": 200,
+        "anchor_draw_fit_seed": 123,
+        "chains_audit": 4,
+        "chains_cv": 4,
+        "draws": 2000,
+        "sampler_seed": 42,
+        "target_accept": 0.99
+      }
+    }
+  },
+  "SummEval-synthetic": {
+    "status": "complete",
+    "run_dir": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249",
+    "resolved_config": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249/resolved_config.json",
+    "provenance": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249/run_config.json",
+    "input_manifest": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249/judge_input_manifest.parquet",
+    "tables": {
+      "leaderboard": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249/leaderboard_results.parquet",
+      "predictions": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249/predictions.parquet",
+      "human_audit": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249/human_audit.parquet",
+      "human_item_audit": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249/human_item_audit.parquet",
+      "llm_audit": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249/llm_audit.parquet",
+      "llm_item_audit": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249/llm_item_audit.parquet",
+      "benchmark_cards": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249/benchmark_cards.parquet",
+      "benchmark_curves": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249/benchmark_curves.parquet",
+      "rhat_records": "/workspaces/TheRulerAndTheJudge-main/results/summeval_synth_MC_per_judge_linspace_20260726_170249/rhat_records.parquet"
+    },
+    "effective_config": {
+      "data": {
+        "benchmark": "summeval_synth",
+        "dimensions": [
+          "coherence"
+        ],
+        "judge_files": [
+          "llm_judge_outputs/summeval_synth/synthetic_judges_reviewer_main_synthetic__00_empirical_identity.parquet",
+          "llm_judge_outputs/summeval_synth/synthetic_judges_reviewer_main_synthetic__m_compression_rho0p9.parquet",
+          "llm_judge_outputs/summeval_synth/synthetic_judges_reviewer_main_synthetic__m_false_confidence_close_rho0p9.parquet",
+          "llm_judge_outputs/summeval_synth/synthetic_judges_reviewer_main_synthetic__60_random_noise_0p8.parquet",
+          "llm_judge_outputs/summeval_synth/synthetic_judges_reviewer_main_synthetic__20_item_permute_within_system.parquet",
+          "llm_judge_outputs/summeval_synth/synthetic_judges_reviewer_main_synthetic__13_category_collapse_3level.parquet",
+          "llm_judge_outputs/summeval_synth/synthetic_judges_reviewer_main_synthetic__55_targeted_supported_pair_flip.parquet",
+          "llm_judge_outputs/summeval_synth/synthetic_judges_reviewer_main_synthetic__m_overseparation_rho0p9.parquet",
+          "llm_judge_outputs/summeval_synth/synthetic_judges_reviewer_main_synthetic__10_coherent_lenient_shift_plus1.parquet"
+        ],
+        "judge_folder": "llm_judge_outputs"
+      },
+      "evaluation": {
+        "conformal_alpha": 0.05,
+        "cv_mode": "loocv",
+        "kfold_seed": 42,
+        "tau_h": 0.8,
+        "tau_l": 0.8,
+        "theta_grid": {
+          "max": 8.0,
+          "min": -8.0,
+          "num": 401
+        }
+      },
+      "model": {
+        "add_alpha_main": false,
+        "anchor_draw_selection": "linspace",
+        "audit_add_alpha": false,
+        "dif_variant": "mc",
+        "use_mc": true
+      },
+      "nested_cv": {
+        "outer_constraint_tau_h": 0.8,
+        "outer_max_candidate_splits": 20000,
+        "outer_max_sr_h": null,
+        "outer_max_supported_pairs": -1,
+        "outer_min_spread_fraction": 0.5,
+        "outer_min_sr_h": null,
+        "outer_min_supported_pairs": -1,
+        "outer_seed": 42,
+        "outer_split_strategy": "constrained_blocked",
+        "outer_splits": 10,
+        "outer_stratify_dimension": "__per_dimension__",
+        "outer_test_size": 0.3
+      },
+      "outputs": {
+        "results_root": "results",
+        "save_artifacts": true,
+        "save_idata": true
+      },
+      "sampling": {
+        "anchor_draw_compute_n": 200,
+        "anchor_draw_compute_seed": 42,
+        "anchor_draw_fit_n": 200,
+        "anchor_draw_fit_seed": 123,
+        "chains_audit": 4,
+        "chains_cv": 4,
+        "draws": 2000,
+        "sampler_seed": 42,
+        "target_accept": 0.99
+      }
+    }
+  }
+}

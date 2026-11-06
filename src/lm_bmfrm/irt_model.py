@@ -288,9 +288,6 @@ def build_llm_ord_model_mc(
     return model, coords
 
 
-
-
-
 def build_llm_ord_dif_model_meanfield(
     df: pd.DataFrame, 
     meta,
