@@ -41,19 +41,19 @@ Posterior system locations in Stage 3 are represented on a shared finite grid. W
 
 All support-based quantities in this release therefore use the tie-symmetric mid-dominance convention:
 
-$$
+```math
 P_{\mathrm{mid}}(A>B)
 =
 P(A>B)
 +
 \frac{1}{2}P(A=B).
-$$
+```
 
 Equivalently, half of the same-grid posterior mass is allocated to each direction. This guarantees the expected symmetry
 
-$
+```math
 P_{\mathrm{mid}}(A>B) + P_{\mathrm{mid}}(B>A) = 1
-$
+```
 
 even when the two discrete posteriors assign positive mass to identical grid locations.
 
@@ -70,10 +70,10 @@ This correction applies to posterior-dominance quantities used for:
 
 It does **not** redefine normalized signed-margin fidelity (nSMF). nSMF uses posterior-predictive pairwise probabilities,
 
-$
+```math
 g_{ab}=\mathbb{E}_{\theta_a,\theta_b}
 \left[\sigma(\theta_a-\theta_b)\right],
-$
+```
 
 rather than finite-sample posterior-dominance probabilities.
 
@@ -83,31 +83,31 @@ False Separation Rate (FSR) is calculated only over pairs that the human ruler d
 
 Let
 
-$
+```math
 \omega^H_{ab}=\left|2p^H_{ab}-1\right|,
 \qquad
 \omega^J_{ab}=\left|2p^J_{ab}-1\right|,
-$
+```
 
 where $p^H_{ab}$ and $p^J_{ab}$ use tie-symmetric mid-dominance.
 
 The human-indistinguishable set is
 
-$$
+```math
 \mathcal{U}_H(\tau_H)
 =
 \left\{(a,b):\omega^H_{ab}<\tau_H\right\}.
-$$
+```
 
 A false separation occurs only when a pair belongs to this set and the judge exceeds its own separation threshold:
 
-$
+```math
 \omega^J_{ab}\geq\tau_L.
-$
+```
 
 Therefore,
 
-$$
+```math
 \mathrm{FSR}
 =
 \frac{
@@ -120,7 +120,7 @@ $$
 }{
 |\mathcal{U}_H(\tau_H)|
 }.
-$$
+```
 
 The denominator is the number of **human-indistinguishable pairs**, not the number of all system pairs and not the number of judge-separated pairs. When the human-indistinguishable set is empty, FSR is undefined rather than artificially set by an unrelated denominator.
 
@@ -134,7 +134,7 @@ The notebooks and released support-based tables use this corrected convention.
 
 For each dataset dimension, the human ratings are modeled with a many-facet ordered Rasch model:
 
-$
+```math
 y^H_{sij}
 \sim
 \operatorname{OrderedLogistic}
@@ -142,7 +142,7 @@ y^H_{sij}
 \theta^H_s-\beta^H_i-\rho^H_j,
 c^H
 \right),
-$
+```
 
 where:
 
@@ -558,11 +558,12 @@ Each rubric dimension is modeled independently and is assumed to be approximatel
 This repository accompanies the anonymous NeurIPS 2026 submission:
 
 ```bibtex
-@inproceedings{anonymous2026rulerjudge,
-  title     = {The Ruler and the Judge: Benchmark-Conditional Evaluation of LLM-as-a-Judge},
+@inproceedings{anonymous2026the,
+  title     = {The Ruler and the Judge: Benchmark-Conditional Evaluation of {LLM}-as-a-Judge},
   author    = {Anonymous},
-  booktitle = {Advances in Neural Information Processing Systems},
-  year      = {2026}
+  booktitle = {The Fortieth Annual Conference on Neural Information Processing Systems Evaluations and Datasets Track},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=NmRNfA31p3}
 }
 ```
 
