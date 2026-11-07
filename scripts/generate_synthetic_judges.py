@@ -1,7 +1,5 @@
-#!/usr/bin/env python
 """
 Generate a synthetic judge suite for LLM-as-a-judge meta-evaluation.
-
 
 Typical usage
 -------------
@@ -26,6 +24,12 @@ Input DataFrame must contain:
 Output DataFrame contains those columns plus:
     pathology, pathology_family, expected_diagnostic_channel,
     pathology_description, pathology_params, paper_table_role
+
+Recommended use:
+1) Treat synthetic judges as unit tests for diagnostic channels, not as a single-metric contest.
+2) Use --suite main for the main paper table and --suite full for appendix robustness.
+3) With --target-raw-spearman, emphasize: similar raw Spearman, different NSMF/FSR/EMD/outfit behavior.
+4) The targeted supported-pair flip uses human mean gaps as a proxy.
 """
 
 from __future__ import annotations
@@ -1584,12 +1588,6 @@ def main() -> None:
     print(f"  Summary:          {summary_path}")
     print(f"  Rows:             {len(result_df)}")
     print(f"  Judges:           {result_df['rater_id'].nunique()}")
-
-    print("\nRecommended use:")
-    print("  1) Treat synthetic judges as unit tests for diagnostic channels, not as a single-metric contest.")
-    print("  2) Use --suite main for the main paper table and --suite full for appendix robustness.")
-    print("  3) With --target-raw-spearman, emphasize: similar raw Spearman, different NSMF/FSR/EMD/outfit behavior.")
-    print("  4) The targeted supported-pair flip uses human mean gaps as a proxy; replace with Stage-1 posterior support if available.")
 
 
 if __name__ == "__main__":
