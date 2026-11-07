@@ -383,7 +383,6 @@ def compare_posteriors_across_grids(
     judge_params, cutpoints, item_difficulty_map :
         Passed through to get_system_posterior_fn.
     get_system_posterior_fn : callable
-        Function with the same interface as your get_system_posterior.
     grid_small : np.ndarray
         Current grid, e.g. np.linspace(-6, 6, 200)
     grid_large : np.ndarray

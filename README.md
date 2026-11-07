@@ -14,7 +14,7 @@ The resulting protocol can select a judge, warn that only restricted claims are 
 
 ## Repository status
 
-This is a frozen research artifact prepared for anonymous review. It contains:
+This is a frozen research artifact. It contains:
 
 - the complete Stage 1, Stage 2, and Stage 3 implementation;
 - exact experiment configurations, seeds, and resolved run configurations;
@@ -302,8 +302,6 @@ results/hanna_MC_per_judge_linspace_20260726_200116/
 results/summeval_synth_MC_per_judge_linspace_20260726_170249/
 ```
 
-The original submission-era outputs are retained separately under `results_submission/`.
-
 ---
 
 ## Programmatic and agent-driven use
@@ -549,8 +547,6 @@ Each rubric dimension is modeled independently and is assumed to be approximatel
 ---
 
 ## Citation
-
-This repository accompanies the anonymous NeurIPS 2026 submission:
 
 ```bibtex
 @inproceedings{ghajari2026ruler,

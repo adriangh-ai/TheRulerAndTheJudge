@@ -39,7 +39,7 @@ predictions = result.predictions
 
 print(
     leaderboard[
-        ["Dimension", "Model", "Spearman", "NSMF", "FSR"]
+        ["Dimension", "Model", "Spearman", "NSMF", "False Separation Rate"]
     ]
 )
 ```

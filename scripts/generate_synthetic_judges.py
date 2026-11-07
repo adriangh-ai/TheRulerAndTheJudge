@@ -26,8 +26,6 @@ Input DataFrame must contain:
 Output DataFrame contains those columns plus:
     pathology, pathology_family, expected_diagnostic_channel,
     pathology_description, pathology_params, paper_table_role
-
-The resulting parquet can be used like your previous synthetic_judges.parquet.
 """
 
 from __future__ import annotations
@@ -1587,10 +1585,10 @@ def main() -> None:
     print(f"  Rows:             {len(result_df)}")
     print(f"  Judges:           {result_df['rater_id'].nunique()}")
 
-    print("\nRecommended use in paper:")
+    print("\nRecommended use:")
     print("  1) Treat synthetic judges as unit tests for diagnostic channels, not as a single-metric contest.")
     print("  2) Use --suite main for the main paper table and --suite full for appendix robustness.")
-    print("  3) With --target-raw-spearman, emphasize: similar raw Spearman, different NFSM/FSR/EMD/outfit behavior.")
+    print("  3) With --target-raw-spearman, emphasize: similar raw Spearman, different NSMF/FSR/EMD/outfit behavior.")
     print("  4) The targeted supported-pair flip uses human mean gaps as a proxy; replace with Stage-1 posterior support if available.")
 
 

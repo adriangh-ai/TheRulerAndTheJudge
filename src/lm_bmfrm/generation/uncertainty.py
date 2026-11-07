@@ -74,27 +74,7 @@ def get_teacher_forced_confidence(model, tokenizer, prompt_text, generated_reaso
     full_context = prompt_text + generated_reasoning + json_prefix
     
     # ------------------------------------------------------------------
-    # Step 2: Identify the Target Token IDs
-    # ------------------------------------------------------------------
-    # We need the IDs for ["1", "2", "3", "4", "5"]
-    # We assume the tokenizer handles single digits as single tokens (true for Llama, GPT, etc.)
-    # target_map = {}
-    # for i in range(1, 6):
-    #     # We encode strictly the number string. 
-    #     # CAUTION: Some tokenizers add a BOS token or handle spaces weirdly.
-    #     # We assume the context ends in a space, so we look for the token "1", not " 1".
-        
-    #     # This generic way usually finds the correct single ID:
-    #     # We encode "1" and take the last token ID (ignoring potential BOS at start)
-    #     token_id = tokenizer.encode(str(i), add_special_tokens=False)[-1]
-    #     target_map[i] = token_id
-        
-    # # Create a tensor of these IDs for easy indexing
-    # # keys: 1..5, values: token_ids
-    # target_ids = list(target_map.values()) # e.g. [29896, 29906, ...]
-    
-    # ------------------------------------------------------------------
-    # Step 3: Forward Pass
+    # Step 2: Forward Pass
     # ------------------------------------------------------------------
     inputs = tokenizer(full_context, return_tensors="pt").to(model.device)
     
@@ -106,7 +86,7 @@ def get_teacher_forced_confidence(model, tokenizer, prompt_text, generated_reaso
         last_token_logits = outputs.logits[0, -1, :]
         
     # ------------------------------------------------------------------
-    # Step 4: Extract and Normalize
+    # Step 3: Extract and Normalize
     # ------------------------------------------------------------------
     # Extract logits only for our target tokens [1, 2, 3, 4, 5]
     score_logits = last_token_logits[target_ids]
@@ -123,14 +103,6 @@ def get_teacher_forced_confidence(model, tokenizer, prompt_text, generated_reaso
     expected_score = sum(s * p for s, p in result.items())
     
     return result, expected_score
-
-# Usage Example
-# prompt = "Rate this movie..."
-# reasoning = "The acting was great but the plot was thin."
-# dist, score = get_teacher_forced_confidence(model, tokenizer, prompt, reasoning)
-# print(dist) 
-# -> {1: 0.01, 2: 0.10, 3: 0.70, 4: 0.15, 5: 0.04}
-
 
 
 def get_confidence_from_ids(model, tokenizer, full_ids, anchor_str='{"score":'):
@@ -245,9 +217,9 @@ def get_confidence_from_ids(model, tokenizer, full_ids, anchor_str='{"score":'):
     
     return dist, expected_score
 
-# Usage Example:
-# full_ids = model.generate(**inputs) # Returns [Prompt + Response]
-# dist, score = get_confidence_from_ids(model, tokenizer, full_ids)
+    # Usage Example:
+    # full_ids = model.generate(**inputs) # Returns [Prompt + Response]
+    # dist, score = get_confidence_from_ids(model, tokenizer, full_ids)
 
 
 def calculate_uncertainty_at_index(model, tokenizer, full_ids, target_index):
@@ -374,6 +346,7 @@ def calculate_uncertainty_metrics(model, tokenizer, full_ids, target_index):
         "score_logits": score_logits.float().cpu().tolist()
     }
 
+
 def prompt_ppl(
     model: AutoModelForCausalLM, 
     tokenizer: AutoTokenizer, 
@@ -382,7 +355,7 @@ def prompt_ppl(
 ):
     model.eval()
 
-    # 1. Handle Tensors (The "Golden Path" for your workflow)
+    # 1. Handle Tensors (The "Golden Path")
     if isinstance(input_data, (torch.Tensor, list)):
         # If it's a list of IDs, convert to tensor
         if isinstance(input_data, list):
@@ -406,7 +379,7 @@ def prompt_ppl(
             "attention_mask": attention_mask
         }
 
-    # 2. Handle Strings (Your old logic)
+    # 2. Handle Strings
     elif isinstance(input_data, str):
 
         inputs = tokenizer(input_data, return_tensors='pt', padding=True, truncation=True)
@@ -456,7 +429,7 @@ def prompt_ppl_bpc_score(
     model.eval()
     
     # ------------------------------------------------------------------
-    # 1. Input Handling (Matches your prompt_ppl structure)
+    # 1. Input Handling
     # ------------------------------------------------------------------
     num_chars = 0
     

@@ -24,9 +24,6 @@ def emd_ordinal_cost(p, q, d=None, eps=1e-12):
     """
     1D EMD / Wasserstein-1 for ordered discrete categories with *adjacent* costs.
 
-    p, q: length-K nonnegative vectors (will be normalized).
-    d: length-(K-1) nonnegative vector of boundary costs between k and k+1.
-       If None -> unit costs (your current emd_ordinal).
     """
     p = np.asarray(p, dtype=np.float64)
     q = np.asarray(q, dtype=np.float64)
