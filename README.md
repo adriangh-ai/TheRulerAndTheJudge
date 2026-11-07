@@ -220,7 +220,7 @@ Stage 3 reports:
 Python 3.11 is recommended for reproducing the released environment.
 
 ```bash
-git clone <ANONYMIZED_REPOSITORY_URL>
+git clone https://github.com/adriangh-ai/TheRulerAndTheJudge.git
 cd TheRulerAndTheJudge
 
 python -m venv .venv
@@ -553,17 +553,14 @@ Each rubric dimension is modeled independently and is assumed to be approximatel
 This repository accompanies the anonymous NeurIPS 2026 submission:
 
 ```bibtex
-@inproceedings{anonymous2026the,
+@inproceedings{ghajari2026ruler,
   title     = {The Ruler and the Judge: Benchmark-Conditional Evaluation of {LLM}-as-a-Judge},
-  author    = {Anonymous},
+  author    = {Ghajari, Adri{\'a}n and Benito-Santos, Alejandro and Fresno, V{\'i}ctor},
   booktitle = {The Fortieth Annual Conference on Neural Information Processing Systems Evaluations and Datasets Track},
   year      = {2026},
   url       = {https://openreview.net/forum?id=NmRNfA31p3}
 }
 ```
-
-Replace the anonymous citation with the final bibliographic record after de-anonymization.
-
 ---
 
 ## License
