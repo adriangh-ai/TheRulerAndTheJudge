@@ -31,15 +31,13 @@ The historical evaluation command remains the authoritative reproduction path. T
 
 ---
 
-## Important correction in this release
-
-During preparation of the requested reproducibility artifact, we identified and corrected a localized inconsistency in support-based pairwise calculations on the finite latent grid.
+## Pairwise measurement conventions
 
 ### Tie-symmetric discrete-grid dominance
 
 Posterior system locations in Stage 3 are represented on a shared finite grid. When two independent posterior draws occupy the same grid point, strict dominance alone leaves positive same-grid mass unallocated.
 
-All support-based quantities in this release therefore use the tie-symmetric mid-dominance convention:
+All support-based quantities use the tie-symmetric mid-dominance convention:
 
 ```math
 P_{\mathrm{mid}}(A>B)
@@ -57,7 +55,7 @@ P_{\mathrm{mid}}(A>B) + P_{\mathrm{mid}}(B>A) = 1
 
 even when the two discrete posteriors assign positive mass to identical grid locations.
 
-This correction applies to posterior-dominance quantities used for:
+This convention applies to posterior-dominance quantities used for:
 
 - supported resolution;
 - human-supported and human-indistinguishable pair classification;
@@ -68,7 +66,7 @@ This correction applies to posterior-dominance quantities used for:
 - support confusion counts;
 - other support-based decision summaries.
 
-It does **not** redefine normalized signed-margin fidelity (nSMF). nSMF uses posterior-predictive pairwise probabilities,
+Normalized signed-margin fidelity (nSMF) uses posterior-predictive pairwise probabilities,
 
 ```math
 g_{ab}=\mathbb{E}_{\theta_a,\theta_b}
@@ -77,7 +75,7 @@ g_{ab}=\mathbb{E}_{\theta_a,\theta_b}
 
 rather than finite-sample posterior-dominance probabilities.
 
-### Correct False Separation Rate accounting
+### False Separation Rate
 
 False Separation Rate (FSR) is calculated only over pairs that the human ruler does not distinguish at the declared human-support threshold.
 
@@ -124,7 +122,7 @@ Therefore,
 
 The denominator is the number of **human-indistinguishable pairs**, not the number of all system pairs and not the number of judge-separated pairs. When the human-indistinguishable set is empty, FSR is undefined rather than artificially set by an unrelated denominator.
 
-The notebooks and released support-based tables use this corrected convention.
+The notebooks and released support-based tables use this convention.
 
 ---
 
