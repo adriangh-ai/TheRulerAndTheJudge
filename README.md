@@ -202,9 +202,7 @@ Stage 3 reports:
 ├── configs/                    Experiment configuration templates
 ├── llm_judge_outputs/          Released judge-rating files by benchmark
 ├── notebooks/                  Paper, HANNA, rebuttal, and sensitivity analyses
-├── notebooks_submission/       Frozen submission-analysis artifacts
 ├── results/                    Rebuttal-era result directories and derived tables
-├── results_submission/         Frozen original-submission result directories
 ├── scripts/                    CLI wrappers and verification utilities
 ├── src/lm_bmfrm/               Installable implementation
 ├── tests/                      Regression and contract tests
@@ -457,7 +455,6 @@ Generated CSV, Parquet, and LaTeX tables are stored alongside the notebook outpu
 ```text
 results/_rebuttal_supporting_tables/
 notebooks/appendix_tables/
-notebooks_submission/appendix_tables_submission/
 ```
 
 Execute notebooks from the repository root so their relative paths resolve correctly.
