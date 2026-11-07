@@ -137,7 +137,7 @@ For each dataset dimension, the human ratings are modeled with a many-facet orde
 ```math
 y^H_{sij}
 \sim
-\operatorname{OrderedLogistic}
+\mathrm{OrderedLogistic}
 \left(
 \theta^H_s-\beta^H_i-\rho^H_j,
 c^H
